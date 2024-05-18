@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" type="x-icon" href="Images/logo.jpg" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Mannat Home</title>
+    <link rel="stylesheet" href="Style.css" />
+    <script
+      src="https://kit.fontawesome.com/4062914c4f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Navbar starts -->
+    <div class="main">
+      <div class="box"></div>
+      <input type="checkbox" id="check" />
+      <label for="check"><i class="fa-solid fa-bars" id="checkbox"></i></label>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="Images/logo.jpg" alt="" width="100px" />
+        </div>
+        <ul class="item">
+          <li class="items"><a href="#">Home</a></li>
+          <li class="items"><a href="#rooms">Rooms</a></li>
+          <li class="items"><a href="#about">About</a></li>
+          <li class="items sm_btn"><a href="#book">Book now</a></li>
+          <li class="items sm_btn_cu"><a href="#">Contact us</a></li>
+        </ul>
+      </nav>
+      <div class="text">
+        <h1 class="text_h_m h1" style="color: white">Lorem ipsum dolor sit</h1>
+        <h3 class="text_h_m h3" style="color: white">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </h3>
+        <li class="items sm_btn"><a href="#">Book now</a></li>
+      </div>
+    </div>
+    <!-- Navbar ends -->
+    <div class="sepration"></div>
+
+    <!-- rooms start -->
+    <div class="rooms" id="rooms">
+      <br />
+      <div class="wrapper">
+        <div class="static_txt">Fantastic</div>
+        <ul class="dynamic_txts">
+          <li class="dynamic_txt"><span>Rooms</span></li>
+          <li class="dynamic_txt"><span>View</span></li>
+          <li class="dynamic_txt"><span>Service</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="box-r" id="Standard">
+        <div class="image-r">
+          <p class="txtr">Standard rooms</p>
+          <li class="items sm_btn btnr">
+            <a href="viewstan.html">View now</a>
+          </li>
+        </div>
+        <div class="text-r">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et unde odio
+          repudiandae officia rerum quis maxime magni, reiciendis aut ullam
+          quasi consequuntur aperiam dignissimos corporis vero placeat
+          consequatur expedita omnis illo possimus nam nostrum ab?
+        </div>
+      </div>
+
+      <div class="box-r" id="Delux">
+        <div class="image-r">
+          <p class="txtr">Delux rooms</p>
+          <li class="items sm_btn btnr">
+            <a href="viewdelux.html">View now</a>
+          </li>
+        </div>
+        <div class="text-r">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et unde odio
+          repudiandae officia rerum quis maxime magni, reiciendis aut ullam
+          quasi consequuntur aperiam dignissimos corporis vero placeat
+          consequatur expedita omnis illo possimus nam nostrum ab?
+        </div>
+      </div>
+
+      <div class="box-r" id="Residentaly">
+        <div class="image-r">
+          <p class="txtr">Residental suite</p>
+          <li class="items sm_btn btnr"><a href="res.html">View now</a></li>
+        </div>
+        <div class="text-r">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et unde odio
+          repudiandae officia rerum quis maxime magni, reiciendis aut ullam
+          quasi consequuntur aperiam dignissimos corporis vero placeat
+          consequatur expedita omnis illo possimus nam nostrum ab?
+        </div>
+      </div>
+    </div>
+
+    <!-- rooms ends -->
+
+    <div class="sepration"></div>
+
+    <!-- about starts -->
+
+    <div class="about_container" id="about">
+      <div class="box2"></div>
+      <div class="heading">
+        <h1 class="ah1">About us</h1>
+      </div>
+      <div class="text" style="z-index: 100">
+        <h1 class="text_h_m h1" style="color: white">Lorem ipsum dolor sit</h1>
+        <h3 class="text_h_m h3" style="color: white">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+          nulla, quas beatae maxime consequatur rerum officia facilis dolore
+          quisquam ea magni cumque neque distinctio eligendi labore illum alias
+          quam eveniet? Voluptatum maiores repellat officia dolore recusandae
+          itaque vel alias aperiam vero ut mollitia excepturi architecto ab
+          neque, nemo ad accusamus.
+        </h3>
+        <li class="items sm_btn"><a href="know.html">Know more</a></li>
+      </div>
+    </div>
+
+    <!-- about  ends  -->
+
+    <div class="sepration"></div>
+
+    <!-- book start -->
+
+    <div id="book">
+      <h1>Book now!</h1>
+      <input
+        type="text"
+        name="Name"
+        id="name"
+        placeholder="Enter your name"
+        class="input-areas"
+        required
+      />
+      <input
+        type="text"
+        name="Email"
+        id="email"
+        placeholder="Enter your email"
+        class="input-areas"
+        required
+      />
+      <input
+        type="text"
+        name="Number"
+        id="number"
+        placeholder="Enter your phone number"
+        class="input-areas"
+        required
+      />
+      <input
+        type="date"
+        name="checkin"
+        id="checkin"
+        class="input-areas"
+        required
+      />
+      <input
+        type="date"
+        name="checkout"
+        id="checkout"
+        class="input-areas"
+        required
+      />
+      <textarea
+        id="textarea"
+        placeholder="Enter your message"
+        cols="20"
+        rows="10"
+        required
+      ></textarea>
+      <input
+        type="button"
+        value="Submit"
+        id="submit"
+        class="input-areas"
+        onclick="whatsapp()"
+      />
+    </div>
+
+    <script>
+      let today = new Date().toISOString().split("T")[0];
+      document.getElementById("checkin").min = today;
+    </script>
+
+    <script>
+      let tomorrow = new Date(today);
+      tomorrow.setDate(tomorrow.getDate() + 1);
+      let minDate = tomorrow.toISOString().split("T")[0];
+      document.getElementById("checkout").min = minDate;
+    </script>
+
+    <script>
+      function whatsapp() {
+  let number = document.getElementById("number").value;
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let checkin = document.getElementById("checkin").value;
+  let checkout = document.getElementById("checkout").value;
+  let address = document.getElementById("email").value; // Fixed typo here
+  let message = document.getElementById("textarea").value;
+
+  if (
+    number !== "" &&
+    name !== "" &&
+    email !== "" &&
+    checkin !== "" &&
+    checkout !== "" &&
+    address !== "" &&
+    message !== ""
+  ) {
+    if (!isNaN(number)) {
+      let url =
+        "https://wa.me/+919218648116?text=" +
+        "Name : " +
+        name +
+        "%0a" +
+        "Email : " +
+        email +
+        "%0a" +
+        "Number : " +
+        number +
+        "%0a" +
+        "Check-in : " +
+        checkin +
+        "%0a" +
+        "Check-out : " +
+        checkout +
+        "%0a" +
+        "Address : " +
+        address +
+        "%0a" +
+        "Message : " +
+        message +
+        "%0a";
+      window.open(url, "_blank").focus();
+    } else {
+      alert("Please provide your number in numerical digits");
+      throw TypeError("Non numerical digits in number input");
+    }
+  } else {
+    alert("Please fill all the details");
+    throw TypeError("Details are not filled in the form");
+  }
+}
+
+    </script>
+    <!-- book ends -->
+  </body>
+</html>

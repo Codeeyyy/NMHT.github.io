@@ -1,0 +1,296 @@
+/* Environment */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+
+    background:url(Images/Valley.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Environment Ends */
+
+/* Navbar starts */
+
+.navbar {
+    height: 100px;
+    width: 60vw;
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+    font-size: 20px;
+}
+
+.items {
+    list-style: none;
+}
+
+.items a {
+    color: white;
+    text-decoration: none;
+}
+
+.items a:hover {
+    text-decoration: underline;
+}
+
+/* Navbar Ends */
+
+
+/* btn starts */
+
+.sm_btn {
+    height: 30px;
+    width: 90px;
+    background-color: #506b27;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+
+.sm_btn_cu {
+    height: 30px;
+    width: 100px;
+    background-color: none;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+/* btn ends */
+
+
+/* responsive navbar starts */
+
+#check {
+    display: none;
+}
+
+#checkbox {
+    color: white;
+    font-size: 35px;
+    display: none;
+    position: relative;
+    z-index: 10000;
+}
+
+@media screen and (max-width:630px) {
+
+    .navbar {
+        height: 80vh;
+        width: 100vw;
+        flex-direction: column;
+        gap: 15px;
+        justify-items: center;
+        position: absolute;
+        left: 200%;
+        transition: 0.5s;
+        background-color: #cc7a00;
+    }
+
+    .logo img {
+        padding-top: 15px;
+    }
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-items: center;
+        position: relative;
+        top: 100px;
+    }
+
+    #checkbox {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+    }
+
+    #check:checked~.navbar {
+        left: 0px;
+    }
+
+    #check:not(:checked)~.navbar {
+        left: -200%;
+    }
+}
+
+
+
+/* responsive navbar ends  */
+
+/* rooms starts */
+.rooms{
+    min-height: 80vh;
+    background-color: white;
+    position: relative;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+}
+.box{
+    height: 300px;
+    width:  100vw;
+    background-color: black;
+    display: flex;
+}
+.image{
+    height: 100%;
+    width: 30%; 
+    background: url(Images/Room1.avif);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+
+}
+.text{
+    height: 100%;
+    width: 70%; 
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+    border: 1px solid black;
+    box-sizing: border-box;
+
+   
+    
+}
+/* rooms ends  */
+
+/* responsive room start */
+
+
+@media screen and (max-width:1000px){
+    .rooms{
+        width: 100vw;
+        min-height: 3220px;
+        position: relative;
+        padding-top:20px;
+    }
+    .box{
+        flex-direction: column;
+        height: 500px;
+        width: 350px;
+    }
+    .image{
+        width: 100%;
+        
+    }
+    .text{
+        width: 100%;
+    }
+.b1{
+    position: relative;
+    left: 30px;
+}
+.b2{
+    position: absolute;
+    right: 30px;
+    top: 540px;
+}
+.b3{
+    position: absolute;
+    left: 30px;
+    top: 1080px;
+}
+.b4{
+    position: absolute;
+    right: 30px;
+    top: 1620px;
+}
+.b5{
+    position: absolute;
+    left: 30px;
+    top: 2160px;
+}
+.b6{
+    position: absolute;
+    right: 30px;
+    top: 2700px;
+}
+}
+
+
+
+@media screen and (max-width:700px){
+    .rooms{
+        width: 100vw;
+        min-height: 3220px;
+        position: relative;
+        padding-top:20px;
+    }
+    .box{
+        flex-direction: column;
+        height: 500px;
+        width: 350px;
+    }
+    .image{
+        width: 100%;
+        
+    }
+    .text{
+        width: 100%;
+    }
+    .b1{
+        position: relative;
+        left: 0px;
+    }
+    .b2{
+        position: absolute;
+        right: 0px;
+        top: 540px;
+    }
+    .b3{
+        position: absolute;
+        left: 0px;
+        top: 1080px;
+    }
+    .b4{
+        position: absolute;
+        right: 0px;
+        top: 1620px;
+    }
+    .b5{
+        position: absolute;
+        left: 0px;
+        top: 2160px;
+    }
+    .b6{
+        position: absolute;
+        right: 0px;
+        top: 2700px;
+    }
+}
+/* responsive room ends  */
