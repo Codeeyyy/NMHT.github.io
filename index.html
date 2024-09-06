@@ -1,257 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="shortcut icon" type="x-icon" href="Images/logo.jpg" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>New Mannat Home</title>
-    <link rel="stylesheet" href="Style.css" />
-    <script
-      src="https://kit.fontawesome.com/4062914c4f.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
-  <body>
-    <!-- Navbar starts -->
-    <div class="main">
-      <div class="box"></div>
-      <input type="checkbox" id="check" />
-      <label for="check"><i class="fa-solid fa-bars" id="checkbox"></i></label>
-      <nav class="navbar">
-        <div class="logo">
-          <img src="Images/logo.jpg" alt="" width="100px" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New Mannat Home</title>
+  <link rel="stylesheet" href="src/output.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="text-white w-screen bg-[#121212] overflow-x-hidden relative">
+  <!-- Navbar -->
+  <div class="menuSVG block lg:hidden absolute top-2 right-5 z-[11]">
+    <img src="svg/menu.svg" alt="" class="w-7 invert">
+  </div>
+  <div
+    class="nav w-[100vw] mx-auto min-h-[100vh] lg:min-h-[9vh] font-sans flex bg-[#121212] justify-center lg:justify-between absolute top-0 border-b z-50 px-5 lg:px-10 flex-col lg:flex-row transition-transform duration-500 translate-x-[-100%] lg:translate-x-0 lg:sticky">
+    <div class="CloseImg absolute top-14 right-10 block lg:hidden">
+      <img src="svg/close.svg" alt="" class="w-4 invert">
+    </div>
+    <div class="Image flex lg:block justify-center w-full">
+      <img src="Images/logo.jpg" alt="Mannat Home Logo" class="w-20 lg:w-24">
+    </div>
+    <div
+      class="elements flex gap-[40px] lg:gap-[34px] relative flex-col lg:flex-row w-full lg:items-start gap-y-20 lg:gap-y-0 items-center mt-10 lg:mt-[1%]">
+      <div>
+        <a href="#" class="font-bold hover:underline">Home</a>
+        <div class="bottomDiv font-[400] flex flex-col top-4 relative lg:top-[10vh] gap-y-5">
+          <a href="#" class="bottom-elements hidden overflow-hidden">
+            <span class="relative inline-block translate-y-[20px]">🏡Home</span>
+          </a>
         </div>
-        <ul class="item">
-          <li class="items"><a href="#">Home</a></li>
-          <li class="items"><a href="#rooms">Rooms</a></li>
-          <li class="items"><a href="#about">About</a></li>
-          <li class="items sm_btn"><a href="#book">Book now</a></li>
-          <li class="items sm_btn_cu"><a href="#">Contact us</a></li>
-        </ul>
-      </nav>
-      <div class="text">
-        <h1 class="text_h_m h1" style="color: white">Lorem ipsum dolor sit</h1>
-        <h3 class="text_h_m h3" style="color: white">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </h3>
-        <li class="items sm_btn"><a href="#">Book now</a></li>
+      </div>
+      <div class="text-wrap lg:text-nowrap flex flex-col items-center">
+        <a href="#" class="font-bold hover:underline">Rooms</a>
+        <div
+          class="bottomDiv font-[400] flex flex-col top-4 relative lg:top-[10vh] gap-y-5 lg:items-start items-center">
+          <a href="#" class="bottom-elements hidden overflow-hidden">
+            <span class="relative inline-block translate-y-[20px]">Standard</span>
+          </a>
+          <a href="#" class="bottom-elements hidden overflow-hidden">
+            <span class="relative inline-block translate-y-[20px]">Deluxe</span>
+          </a>
+          <a href="#" class="bottom-elements hidden overflow-hidden">
+            <span class="relative inline-block translate-y-[20px]">Residential suite</span>
+          </a>
+        </div>
+      </div>
+      <div class="text-wrap lg:text-nowrap flex flex-col items-center">
+        <a href="#" class="font-bold hover:underline">About</a>
+        <div
+          class="bottomDiv font-[400] flex flex-col top-4 relative lg:top-[10vh] gap-y-5 lg:items-start items-center">
+          <a href="#" class="bottom-elements hidden overflow-hidden">
+            <span class="relative inline-block translate-y-[20px]">About Us</span>
+          </a>
+          <a href="#" class="bottom-elements hidden overflow-hidden">
+            <span class="relative inline-block translate-y-[20px]">About Naggar</span>
+          </a>
+          <a href="#" class="bottom-elements hidden overflow-hidden">
+            <span class="relative inline-block translate-y-[20px]">🔥About Naggar Castle</span>
+          </a>
+        </div>
+      </div>
+      <div class="text-wrap lg:text-nowrap flex flex-col items-center">
+        <a href="#" class="font-bold hover:underline">More..</a>
+        <div
+          class="bottomDiv font-[400] flex flex-col top-4 relative lg:top-[10vh] gap-y-5 lg:items-start items-center">
+          <a href="#" class="bottom-elements hidden overflow-hidden">
+            <span class="relative inline-block">📷Gallery</span>
+          </a>
+          <a href="#" class="bottom-elements hidden overflow-hidden">
+            <span class="relative inline-block translate-y-[20px]">Places to visit</span>
+          </a>
+          <a href="#" class="bottom-elements hidden overflow-hidden">
+            <span class="relative inline-block translate-y-[20px]">Things to do</span>
+          </a>
+          <a href="#" class="bottom-elements hidden overflow-hidden">
+            <span class="relative inline-block translate-y-[20px]">😊Services</span>
+          </a>
+          <a href="#" class="bottom-elements hidden overflow-hidden">
+            <span class="relative inline-block translate-y-[20px]">📙Write a review</span>
+          </a>
+        </div>
+      </div>
+      <a href="#" class="bookNow relative bg-[#506b27] h-[40px] p-[1.5vh] hover:underline min-w-fit text-nowrap">Book
+        now</a>
+      <a href="#"
+        class="Login relative border h-[40px] p-[1.5vh] rounded-2xl hover:underline min-w-fit  flex items-center">Log
+        in🔑</a>
+    </div>
+  </div>
+
+  <main class="w-screen h-[50vh] lg:h-[100vh] relative overflow-hidden">
+    <div class="darken h-full w-full absolute top-0 left-0 z-10" style="background: rgba(0, 0, 0, 0.7)"></div>
+    <div class="bg bg-blend-darken w-full h-full">
+      <img src="Images/Bc_image.webp" alt="" class="w-full h-full object-cover" />
+    </div>
+    <div class="text absolute top-10 lg:top-0 left-3 z-[11] h-full w-full lg:left-5">
+      <h1 class="greet text-white text-[13vw]">Hello</h1>
+      <h1 class="greet text-white text-[5vw] lg:text-[4vw]">
+        <span class="greet">It's</span>
+        <span class="greet h-fit w-fit p-2 lg:p-3 bg-[#fbb041] rounded-2xl"><span class="greet">NEW </span><span
+            class="greet">MANNAT</span>
+          <span class="greet">HOME</span>
+        </span>
+      </h1>
+    </div>
+  </main>
+  <section class="h-fit w-screen overflow-x-hidden">
+    <div class="IMGtoCON h-fit w-full absolute flex justify-center items-center opacity-0">
+      <div class="IMGtO h-[90vh] w-[95%] absolute bg-black z-[3] outline top-5">
+        <img src="" alt="" class="IMGtOimg h-full w-full object-cover" />
+        <img src="svg/close.svg" alt=""
+          class="close h-[30px] w-[5vw] absolute top-3 right-5 z-[3] invert cursor-pointer" />
       </div>
     </div>
-    <!-- Navbar ends -->
-    <div class="sepration"></div>
-
-    <!-- rooms start -->
-    <div class="rooms" id="rooms">
-      <br />
-      <div class="wrapper">
-        <div class="static_txt">Fantastic</div>
-        <ul class="dynamic_txts">
-          <li class="dynamic_txt"><span>Rooms</span></li>
-          <li class="dynamic_txt"><span>View</span></li>
-          <li class="dynamic_txt"><span>Service</span></li>
-        </ul>
+    <div class="w-screen cardCont flex overflow-hidden p-2 relative h-[400px]">
+      <div class="Imgs h-[70vh] w-[70%] bg-white"></div>
+      <div class="blur h-[220px] w-[20vw] absolute left-[-15px] top-0 z-[1]"
+        style="background: linear-gradient(to right, black, transparent)"></div>
+      <div class="blur h-[220px] w-[20vw] absolute right-[-15px] top-0 z-[1]"
+        style="background: linear-gradient(to left, black, transparent)"></div>
+      <div class="move flex justify-center gap-4 h-fit">
+        <div class="card min-w-[300px] h-[200px] relative">
+          <img src="Images/Room2.avif" alt="" class="h-full w-full object-cover" />
+          <img src="svg/arrow-up-right.svg" alt="" class="arrow-open absolute h-5 w-5 top-3 right-3 invert hidden" />
+        </div>
+        <div class="card min-w-[300px] h-[200px] relative">
+          <img src="Images/Room1.avif" alt="" class="h-full w-full object-cover" />
+          <img src="svg/arrow-up-right.svg" alt="" class="arrow-open absolute h-5 w-5 top-3 right-3 invert hidden" />
+        </div>
+        <div class="card min-w-[300px] h-[200px] relative">
+          <img src="Images/stan1.jpeg" alt="" class="h-full w-full object-cover" />
+          <img src="svg/arrow-up-right.svg" alt="" class="arrow-open absolute h-5 w-5 top-3 right-3 invert hidden" />
+        </div>
+        <div class="card min-w-[300px] h-[200px] relative">
+          <img src="Images/stan2.jpg" alt="" class="h-full w-full object-cover" />
+          <img src="svg/arrow-up-right.svg" alt="" class="arrow-open absolute h-5 w-5 top-3 right-3 invert hidden" />
+        </div>
+        <div class="card min-w-[300px] h-[200px] relative">
+          <img src="Images/de2.jpeg" alt="" class="h-full w-full object-cover" />
+          <img src="svg/arrow-up-right.svg" alt="" class="arrow-open absolute h-5 w-5 top-3 right-3 invert hidden" />
+        </div>
+        <div class="card min-w-[300px] h-[200px] relative">
+          <img src="Images/de4.jpeg" alt="" class="h-full w-full object-cover" />
+          <img src="svg/arrow-up-right.svg" alt="" class="arrow-open absolute h-5 w-5 top-3 right-3 invert hidden" />
+        </div>
+        <div class="card min-w-[300px] h-[200px] relative">
+          <img src="Images/de5.jpeg" alt="" class="h-full w-full object-cover" />
+          <img src="svg/arrow-up-right.svg" alt="" class="arrow-open absolute h-5 w-5 top-3 right-3 invert hidden" />
+        </div>
+        <div class="card min-w-[300px] h-[200px] relative">
+          <img src="Images/res1.jpeg" alt="" class="h-full w-full object-cover" />
+          <img src="svg/arrow-up-right.svg" alt="" class="arrow-open absolute h-5 w-5 top-3 right-3 invert hidden" />
+        </div>
+        <div class="card min-w-[300px] h-[200px] relative">
+          <img src="Images/res2.jpeg" alt="" class="h-full w-full object-cover" />
+          <img src="svg/arrow-up-right.svg" alt="" class="arrow-open absolute h-5 w-5 top-3 right-3 invert hidden" />
+        </div>
+        <div class="card min-w-[300px] h-[200px] relative">
+          <img src="Images/res3.jpeg" alt="" class="h-full w-full object-cover" />
+          <img src="svg/arrow-up-right.svg" alt="" class="arrow-open absolute h-5 w-5 top-3 right-3 invert hidden" />
+        </div>
+      </div>
+      <div class="move flex justify-center gap-4 h-fit ml-4">
+        <div class="card min-w-[300px] h-[200px] relative">
+          <img src="Images/Room2.avif" alt="" class="h-full w-full object-cover" />
+          <img src="svg/arrow-up-right.svg" alt="" class="arrow-open absolute h-5 w-5 top-3 right-3 invert hidden" />
+        </div>
+        <div class="card min-w-[300px] h-[200px] relative">
+          <img src="Images/Room1.avif" alt="" class="h-full w-full object-cover" />
+          <img src="svg/arrow-up-right.svg" alt="" class="arrow-open absolute h-5 w-5 top-3 right-3 invert hidden" />
+        </div>
+        <div class="card min-w-[300px] h-[200px] relative">
+          <img src="Images/stan1.jpeg" alt="" class="h-full w-full object-cover" />
+          <img src="svg/arrow-up-right.svg" alt="" class="arrow-open absolute h-5 w-5 top-3 right-3 invert hidden" />
+        </div>
+        <div class="card min-w-[300px] h-[200px] relative">
+          <img src="Images/stan2.jpg" alt="" class="h-full w-full object-cover" />
+          <img src="svg/arrow-up-right.svg" alt="" class="arrow-open absolute h-5 w-5 top-3 right-3 invert hidden" />
+        </div>
+        <div class="card min-w-[300px] h-[200px] relative">
+          <img src="Images/de2.jpeg" alt="" class="h-full w-full object-cover" />
+          <img src="svg/arrow-up-right.svg" alt="" class="arrow-open absolute h-5 w-5 top-3 right-3 invert hidden" />
+        </div>
+        <div class="card min-w-[300px] h-[200px] relative">
+          <img src="Images/de4.jpeg" alt="" class="h-full w-full object-cover" />
+          <img src="svg/arrow-up-right.svg" alt="" class="arrow-open absolute h-5 w-5 top-3 right-3 invert hidden" />
+        </div>
+        <div class="card min-w-[300px] h-[200px] relative">
+          <img src="Images/de5.jpeg" alt="" class="h-full w-full object-cover" />
+          <img src="svg/arrow-up-right.svg" alt="" class="arrow-open absolute h-5 w-5 top-3 right-3 invert hidden" />
+        </div>
+        <div class="card min-w-[300px] h-[200px] relative">
+          <img src="Images/res1.jpeg" alt="" class="h-full w-full object-cover" />
+          <img src="svg/arrow-up-right.svg" alt="" class="arrow-open absolute h-5 w-5 top-3 right-3 invert hidden" />
+        </div>
+        <div class="card min-w-[300px] h-[200px] relative">
+          <img src="Images/res2.jpeg" alt="" class="h-full w-full object-cover" />
+          <img src="svg/arrow-up-right.svg" alt="" class="arrow-open absolute h-5 w-5 top-3 right-3 invert hidden" />
+        </div>
+        <div class="card min-w-[300px] h-[200px] relative">
+          <img src="Images/res3.jpeg" alt="" class="h-full w-full object-cover" />
+          <img src="svg/arrow-up-right.svg" alt="" class="arrow-open absolute h-5 w-5 top-3 right-3 invert hidden" />
+        </div>
       </div>
     </div>
-    <div class="container">
-      <div class="box-r" id="Standard">
-        <div class="image-r">
-          <p class="txtr">Standard rooms</p>
-          <li class="items sm_btn btnr">
-            <a href="viewstan.html">View now</a>
-          </li>
+
+
+
+    </div>
+
+    <div class="rev flex gap-5 flex-wrap h-fit w-screen justify-center">
+
+      <div class="rev-card w-[300px] h-[300px] relative bg-gray-700 shadow-lg p-4 rounded-lg bottom-36">
+        <div class="rating text-yellow-500 text-xl mb-2 rm">★★★★★</div>
+        <h3 class="text-xl font-bold mb-2 rm">Great Stay!</h3>
+        <p class="text-base text-gray-300 mb-4 rm">The hotel was clean and the staff were very friendly. I had a
+          wonderful time and would definitely come back again.</p>
+        <div class="flex items-center mt-4 rm">
+          <img src="reviewer-photo.jpg" alt="Reviewer Photo" class="rounded-full w-10 h-10 mr-3">
+          <div class="rm">
+            <div class="font-bold text-gray-300">John Doe</div>
+            <div class="text-sm text-gray-500">August 20, 2024</div>
+          </div>
         </div>
-        <div class="text-r">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et unde odio
-          repudiandae officia rerum quis maxime magni, reiciendis aut ullam
-          quasi consequuntur aperiam dignissimos corporis vero placeat
-          consequatur expedita omnis illo possimus nam nostrum ab?
+      </div>
+      <div class="rev-card w-[300px] h-[300px] relative bg-gray-700 shadow-lg p-4 rounded-lg bottom-36">
+        <div class="rating text-yellow-500 text-xl mb-2 rm">★★★★★</div>
+        <h3 class="text-xl font-bold mb-2 rm">Great Stay!</h3>
+        <p class="text-base text-gray-300 mb-4 rm">The hotel was clean and the staff were very friendly. I had a
+          wonderful time and would definitely come back again.</p>
+        <div class="flex items-center mt-4 rm">
+          <img src="reviewer-photo.jpg" alt="Reviewer Photo" class="rounded-full w-10 h-10 mr-3">
+          <div class="rm">
+            <div class="font-bold text-gray-300">John Doe</div>
+            <div class="text-sm text-gray-500">August 20, 2024</div>
+          </div>
+        </div>
+      </div>
+      <div class="rev-card w-[300px] h-[300px] relative bg-gray-700 shadow-lg p-4 rounded-lg bottom-36">
+        <div class="rating text-yellow-500 text-xl mb-2 rm">★★★★★</div>
+        <h3 class="text-xl font-bold mb-2 rm">Great Stay!</h3>
+        <p class="text-base text-gray-300 mb-4 rm">The hotel was clean and the staff were very friendly. I had a
+          wonderful time and would definitely come back again.</p>
+        <div class="flex items-center mt-4 rm">
+          <img src="reviewer-photo.jpg" alt="Reviewer Photo" class="rounded-full w-10 h-10 mr-3">
+          <div class="rm">
+            <div class="font-bold text-gray-300">John Doe</div>
+            <div class="text-sm text-gray-500">August 20, 2024</div>
+          </div>
         </div>
       </div>
 
-      <div class="box-r" id="Delux">
-        <div class="image-r">
-          <p class="txtr">Delux rooms</p>
-          <li class="items sm_btn btnr">
-            <a href="viewdelux.html">View now</a>
-          </li>
-        </div>
-        <div class="text-r">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et unde odio
-          repudiandae officia rerum quis maxime magni, reiciendis aut ullam
-          quasi consequuntur aperiam dignissimos corporis vero placeat
-          consequatur expedita omnis illo possimus nam nostrum ab?
-        </div>
-      </div>
 
-      <div class="box-r" id="Residentaly">
-        <div class="image-r">
-          <p class="txtr">Residental suite</p>
-          <li class="items sm_btn btnr"><a href="res.html">View now</a></li>
-        </div>
-        <div class="text-r">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et unde odio
-          repudiandae officia rerum quis maxime magni, reiciendis aut ullam
-          quasi consequuntur aperiam dignissimos corporis vero placeat
-          consequatur expedita omnis illo possimus nam nostrum ab?
-        </div>
+
+    </div>
+
+
+    <div class="w-fit h-fit m-auto mt-0 flex items-center flex-col relative bottom-36">
+      <h1 class="Questions text-[9vw] text-[#ff999a] underline">Any Questions?</h1>
+      <h1 class="Answer text-[9vw]">Feel free to ask</h1>
+    </div>
+
+    <div class="Contacts w-[80vw] h-fit  mb-10 outline mx-auto rounded-2xl">
+      <div
+        class="ContactNow relative border h-[40px] p-[1.5vh] rounded-2xl hover:underline flex items-center justify-center w-full">
+        <a href="#">Contact Us 📞</a>
+      </div>
+    </div>
+    <div
+      class="FFTACon text-[30vw] w-screen max-h-[600px] text-nowrap overflow-x-hidden bg-[#9ac1cb] text-black flex items-center-center uppercase">
+      <h1 class="absolute">🎉</h1>
+      <h1 class="absolute left-[55vw]" style=" transform: scale(-1, 1); ">🎉</h1>
+      <h1 class="FFTA"><span class="outline rounded-3xl h-fit bg-violet-500 text-[#ff999a] ">I</span> Wanna <span
+          class="outline rounded-3xl h-fit bg-blue-500 text-[#ff999a] ">have</span> <span
+          class="text-pink-400">some</span> <span
+          class="outline rounded-3xl h-fit bg-yellow-500 text-white">rooms!</span> </h1>
+    </div>
+  </section>
+
+  <section class="Rooms w-full min-h-full">
+
+    <div class="RoomHeadingCONTAINER text-white">
+      <div class="headingRooms flex w-screen justify-center">
+      </div>
+      <div class="standard flex w-full h-fit items-center flex-col ">
+      <div class="StandardCards h-fit md:h-[70vh] w-[90%] rounded-2xl bg-slate-700 p-4 overflow-y-auto shadow-neumorphism">
+  <div class="innercontent h-full w-full relative flex flex-col md:grid md:grid-cols-2 md:grid-rows-2 gap-4">
+    <div class="img h-[50%] md:h-full w-full rounded-2xl bg-green-700 md:col-span-1 md:row-span-2 shadow-neumorphism">
+      <img src="Images/stan1.jpeg" alt="" class="object-cover h-full w-full rounded-2xl">
+    </div>
+    <div class="StanText  h-[50%] md:h-full w-full flex flex-col items-center p-3 gap-y-4 md:col-span-1 md:row-span-1 shadow-neumorphism rounded-2xl">
+      <h1 class="text-3xl text-white">Standard Rooms!</h1>
+      <p class="text-white"></p>
+      <button class="h-16 w-28 bg-gradient-to-r from-green-500 to-green-700 rounded-md shadow-neumorphism hover:shadow-neumorphism-hover transition-shadow duration-300">
+        <a href="#" class="font-semibold text-white">View more</a>
+      </button>
+      
+    </div>
+    <div class="price h-[30%] md:h-full w-full flex flex-col items-center p-3 gap-y-4 md:col-span-1 md:row-span-1 shadow-neumorphism rounded-2xl">
+      <h1 class="text-3xl text-white">Price 💰!</h1>
+      <p class="text-white">Price ranges from 1300 - 1500</p>
+      <p class="text-white">The range difference is based on wgara wgara</p>
+    </div>
+  </div>
+</div>
       </div>
     </div>
 
-    <!-- rooms ends -->
 
-    <div class="sepration"></div>
 
-    <!-- about starts -->
+  </section>
 
-    <div class="about_container" id="about">
-      <div class="box2"></div>
-      <div class="heading">
-        <h1 class="ah1">About us</h1>
-      </div>
-      <div class="text" style="z-index: 100">
-        <h1 class="text_h_m h1" style="color: white">Lorem ipsum dolor sit</h1>
-        <h3 class="text_h_m h3" style="color: white">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-          nulla, quas beatae maxime consequatur rerum officia facilis dolore
-          quisquam ea magni cumque neque distinctio eligendi labore illum alias
-          quam eveniet? Voluptatum maiores repellat officia dolore recusandae
-          itaque vel alias aperiam vero ut mollitia excepturi architecto ab
-          neque, nemo ad accusamus.
-        </h3>
-        <li class="items sm_btn"><a href="know.html">Know more</a></li>
-      </div>
-    </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- about  ends  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <div class="sepration"></div>
+  <script src="script.js"></script>
+</body>
 
-    <!-- book start -->
-
-    <div id="book">
-      <h1>Book now!</h1>
-      <input
-        type="text"
-        name="Name"
-        id="name"
-        placeholder="Enter your name"
-        class="input-areas"
-        required
-      />
-      <input
-        type="text"
-        name="Email"
-        id="email"
-        placeholder="Enter your email"
-        class="input-areas"
-        required
-      />
-      <input
-        type="text"
-        name="Number"
-        id="number"
-        placeholder="Enter your phone number"
-        class="input-areas"
-        required
-      />
-      <input
-        type="date"
-        name="checkin"
-        id="checkin"
-        class="input-areas"
-        required
-      />
-      <input
-        type="date"
-        name="checkout"
-        id="checkout"
-        class="input-areas"
-        required
-      />
-      <textarea
-        id="textarea"
-        placeholder="Enter your message"
-        cols="20"
-        rows="10"
-        required
-      ></textarea>
-      <input
-        type="button"
-        value="Submit"
-        id="submit"
-        class="input-areas"
-        onclick="whatsapp()"
-      />
-    </div>
-
-    <script>
-      let today = new Date().toISOString().split("T")[0];
-      document.getElementById("checkin").min = today;
-    </script>
-
-    <script>
-      let tomorrow = new Date(today);
-      tomorrow.setDate(tomorrow.getDate() + 1);
-      let minDate = tomorrow.toISOString().split("T")[0];
-      document.getElementById("checkout").min = minDate;
-    </script>
-
-    <script>
-      function whatsapp() {
-  let number = document.getElementById("number").value;
-  let name = document.getElementById("name").value;
-  let email = document.getElementById("email").value;
-  let checkin = document.getElementById("checkin").value;
-  let checkout = document.getElementById("checkout").value;
-  let address = document.getElementById("email").value; // Fixed typo here
-  let message = document.getElementById("textarea").value;
-
-  if (
-    number !== "" &&
-    name !== "" &&
-    email !== "" &&
-    checkin !== "" &&
-    checkout !== "" &&
-    address !== "" &&
-    message !== ""
-  ) {
-    if (!isNaN(number)) {
-      let url =
-        "https://wa.me/+919218648116?text=" +
-        "Name : " +
-        name +
-        "%0a" +
-        "Email : " +
-        email +
-        "%0a" +
-        "Number : " +
-        number +
-        "%0a" +
-        "Check-in : " +
-        checkin +
-        "%0a" +
-        "Check-out : " +
-        checkout +
-        "%0a" +
-        "Address : " +
-        address +
-        "%0a" +
-        "Message : " +
-        message +
-        "%0a";
-      window.open(url, "_blank").focus();
-    } else {
-      alert("Please provide your number in numerical digits");
-      throw TypeError("Non numerical digits in number input");
-    }
-  } else {
-    alert("Please fill all the details");
-    throw TypeError("Details are not filled in the form");
-  }
-}
-
-    </script>
-    <!-- book ends -->
-  </body>
 </html>
