@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>New Mannat Home</title>
   <link rel="stylesheet" href="src/output.css" />
-  <link rel="stylesheet" href="Style.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
-<body class="text-white w-screen bg-[#121212] overflow-x-hidden relative">
+<body class="text-white w-screen bg-[#121212] overflow-x-hidden relative scrollbar-custom">
   <!-- Navbar -->
   <div class="menuSVG block lg:hidden absolute top-2 right-5 z-[11]">
     <img src="svg/menu.svg" alt="" class="w-7 invert">
@@ -25,13 +25,30 @@
     <div
       class="elements flex gap-[40px] lg:gap-[34px] relative flex-col lg:flex-row w-full lg:items-start gap-y-20 lg:gap-y-0 items-center mt-10 lg:mt-[1%]">
       <div>
-        <a href="#" class="font-bold hover:underline">Home</a>
+        <a href="index.html" class="font-bold hover:underline">Home</a>
         <div class="bottomDiv font-[400] flex flex-col top-4 relative lg:top-[10vh] gap-y-5">
-          <a href="#" class="bottom-elements hidden overflow-hidden">
+          <a href="index.html" class="bottom-elements hidden overflow-hidden">
             <span class="relative inline-block translate-y-[20px]">🏡Home</span>
           </a>
         </div>
       </div>
+
+      <div class="text-wrap lg:text-nowrap flex flex-col items-center">
+        <a href="AboutUs.html" class="font-bold hover:underline">About</a>
+        <div
+          class="bottomDiv font-[400] flex flex-col top-4 relative lg:top-[10vh] gap-y-5 lg:items-start items-center">
+          <a href="AboutUs.html" class="bottom-elements hidden overflow-hidden">
+            <span class="relative inline-block translate-y-[20px]">About Us</span>
+          </a>
+          <a href="#" class="bottom-elements hidden overflow-hidden">
+            <span class="relative inline-block translate-y-[20px]">About Naggar</span>
+          </a>
+          <a href="#" class="bottom-elements hidden overflow-hidden">
+            <span class="relative inline-block translate-y-[20px]">🔥About Naggar Castle</span>
+          </a>
+        </div>
+      </div>
+
       <div class="text-wrap lg:text-nowrap flex flex-col items-center">
         <a href="#" class="font-bold hover:underline">Rooms</a>
         <div
@@ -47,27 +64,13 @@
           </a>
         </div>
       </div>
-      <div class="text-wrap lg:text-nowrap flex flex-col items-center">
-        <a href="#" class="font-bold hover:underline">About</a>
-        <div
-          class="bottomDiv font-[400] flex flex-col top-4 relative lg:top-[10vh] gap-y-5 lg:items-start items-center">
-          <a href="#" class="bottom-elements hidden overflow-hidden">
-            <span class="relative inline-block translate-y-[20px]">About Us</span>
-          </a>
-          <a href="#" class="bottom-elements hidden overflow-hidden">
-            <span class="relative inline-block translate-y-[20px]">About Naggar</span>
-          </a>
-          <a href="#" class="bottom-elements hidden overflow-hidden">
-            <span class="relative inline-block translate-y-[20px]">🔥About Naggar Castle</span>
-          </a>
-        </div>
-      </div>
+  
       <div class="text-wrap lg:text-nowrap flex flex-col items-center">
         <a href="#" class="font-bold hover:underline">More..</a>
         <div
           class="bottomDiv font-[400] flex flex-col top-4 relative lg:top-[10vh] gap-y-5 lg:items-start items-center">
           <a href="#" class="bottom-elements hidden overflow-hidden">
-            <span class="relative inline-block">📷Gallery</span>
+            <span class="relative inline-block  translate-y-[20px]">📷Gallery</span>
           </a>
           <a href="#" class="bottom-elements hidden overflow-hidden">
             <span class="relative inline-block translate-y-[20px]">Places to visit</span>
@@ -102,9 +105,10 @@
         <span class="greet">It's</span>
         <span class="greet h-fit w-fit p-2 lg:p-3 bg-[#fbb041] rounded-2xl"><span class="greet">NEW </span><span
             class="greet">MANNAT</span>
-          <span class="greet">HOME</span>
+          <span class="greet ">HOME</span>
         </span>
       </h1>
+      <h1 class="greet relative text-white text-[4vw] lg:text-[3vw] top-7">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, quam.</h1>
     </div>
   </main>
   <section class="h-fit w-screen overflow-x-hidden">
@@ -211,9 +215,49 @@
 
     </div>
 
+
+
+
+
+    <section class="aboutContainer h-fit w-[100vw] mt-3 bg-blue-400">
+
+      <!-- Introduction Section -->
+      <section class="about-intro bg-[#1f2937] text-white py-10 h-[70vh] relative">
+       <div class="container mx-auto px-4 relative z-[2]">
+         <h1 class="text-4xl font-bold mb-4 about">About Us</h1>
+         <p class="text-lg about">At New Mannat Home, we believe in providing a home away from home. Our mission is to offer a comfortable and luxurious stay for all our guests, ensuring they have a memorable experience.</p>
+         <button class="h-16 w-28 bg-gradient-to-r from-green-500 to-green-700 rounded-md shadow-neumorphism hover:shadow-neumorphism-hover transition-shadow duration-300 relative top-4 about">
+           <a href="#" class="font-semibold text-white">View more</a>
+         </button>
+       </div>
+       <div class="welcomeIMG bg bg-blend-darken w-full h-full absolute top-0 right-0 z-0">
+      </div>
+      
+     </section>
+
+     <div class="sepration w-full h-2 bg-[#506b27]"></div>
+   
+   </section>
+   
+
+
+
     <div class="rev flex gap-5 flex-wrap h-fit w-screen justify-center">
 
-      <div class="rev-card w-[300px] h-[300px] relative bg-gray-700 shadow-lg p-4 rounded-lg bottom-36">
+      <div class="rev-card w-[300px] h-[300px] relative top-4  bg-gray-700 shadow-lg p-4 rounded-lg ">
+        <div class="rating text-yellow-500 text-xl mb-2 rm">★★★★★</div>
+        <h3 class="text-xl font-bold mb-2 rm">Great Stay!</h3>
+        <p class="text-base text-gray-300 mb-4 rm">The hotel was clean and the staff were very friendly. I had a
+          wonderful time and would definitely come back again. </p>
+        <div class="flex items-center mt-4 rm">
+          <img src="reviewer-photo.jpg" alt="Reviewer Photo" class="rounded-full w-10 h-10 mr-3">
+          <div class="rm">
+            <div class="font-bold text-gray-300">John Doe</div>
+            <div class="text-sm text-gray-500">August 20, 2024</div>
+          </div>
+        </div>
+      </div>
+      <div class="rev-card w-[300px] h-[300px] relative top-4  bg-gray-700 shadow-lg p-4 rounded-lg ">
         <div class="rating text-yellow-500 text-xl mb-2 rm">★★★★★</div>
         <h3 class="text-xl font-bold mb-2 rm">Great Stay!</h3>
         <p class="text-base text-gray-300 mb-4 rm">The hotel was clean and the staff were very friendly. I had a
@@ -226,20 +270,7 @@
           </div>
         </div>
       </div>
-      <div class="rev-card w-[300px] h-[300px] relative bg-gray-700 shadow-lg p-4 rounded-lg bottom-36">
-        <div class="rating text-yellow-500 text-xl mb-2 rm">★★★★★</div>
-        <h3 class="text-xl font-bold mb-2 rm">Great Stay!</h3>
-        <p class="text-base text-gray-300 mb-4 rm">The hotel was clean and the staff were very friendly. I had a
-          wonderful time and would definitely come back again.</p>
-        <div class="flex items-center mt-4 rm">
-          <img src="reviewer-photo.jpg" alt="Reviewer Photo" class="rounded-full w-10 h-10 mr-3">
-          <div class="rm">
-            <div class="font-bold text-gray-300">John Doe</div>
-            <div class="text-sm text-gray-500">August 20, 2024</div>
-          </div>
-        </div>
-      </div>
-      <div class="rev-card w-[300px] h-[300px] relative bg-gray-700 shadow-lg p-4 rounded-lg bottom-36">
+      <div class="rev-card w-[300px] h-[300px] relative top-4 bg-gray-700 shadow-lg p-4 rounded-lg ">
         <div class="rating text-yellow-500 text-xl mb-2 rm">★★★★★</div>
         <h3 class="text-xl font-bold mb-2 rm">Great Stay!</h3>
         <p class="text-base text-gray-300 mb-4 rm">The hotel was clean and the staff were very friendly. I had a
@@ -258,7 +289,7 @@
     </div>
 
 
-    <div class="w-fit h-fit m-auto mt-0 flex items-center flex-col relative bottom-36">
+    <div class="w-fit h-fit m-auto mt-0 flex items-center flex-col relative ">
       <h1 class="Questions text-[9vw] text-[#ff999a] underline">Any Questions?</h1>
       <h1 class="Answer text-[9vw]">Feel free to ask</h1>
     </div>
@@ -270,28 +301,33 @@
       </div>
     </div>
     <div
-      class="FFTACon text-[30vw] w-screen max-h-[600px] text-nowrap overflow-x-hidden bg-[#9ac1cb] text-black flex items-center-center uppercase">
+      class="FFTACon text-[30vw] w-screen h-[50vh] md:h-[600px] text-nowrap overflow-x-hidden bg-[#9ac1cb] text-black flex items-center uppercase">
       <h1 class="absolute">🎉</h1>
       <h1 class="absolute left-[55vw]" style=" transform: scale(-1, 1); ">🎉</h1>
-      <h1 class="FFTA"><span class="outline rounded-3xl h-fit bg-violet-500 text-[#ff999a] ">I</span> Wanna <span
+      <h1 class="FFTA"><span class="outline rounded-3xl h-full bg-violet-500 text-[#ff999a] ">I</span> Wanna <span
           class="outline rounded-3xl h-fit bg-blue-500 text-[#ff999a] ">have</span> <span
           class="text-pink-400">some</span> <span
           class="outline rounded-3xl h-fit bg-yellow-500 text-white">rooms!</span> </h1>
     </div>
   </section>
 
+
+
+  
+
+  
   <section class="Rooms w-full min-h-full">
 
     <div class="RoomHeadingCONTAINER text-white">
       <div class="headingRooms flex w-screen justify-center">
       </div>
       <div class="standard flex w-full h-fit items-center flex-col ">
-      <div class="StandardCards h-fit md:h-[70vh] w-[90%] rounded-2xl bg-slate-700 p-4 overflow-y-auto shadow-neumorphism">
+      <div class="StandardCards h-fit md:h-[70vh] w-[90%] rounded-2xl bg-slate-700 p-4  shadow-neumorphism overflow-y-auto scrollbar-custom">
   <div class="innercontent h-full w-full relative flex flex-col md:grid md:grid-cols-2 md:grid-rows-2 gap-4">
     <div class="img h-[50%] md:h-full w-full rounded-2xl bg-green-700 md:col-span-1 md:row-span-2 shadow-neumorphism">
       <img src="Images/stan1.jpeg" alt="" class="object-cover h-full w-full rounded-2xl">
     </div>
-    <div class="StanText  h-[50%] md:h-full w-full flex flex-col items-center p-3 gap-y-4 md:col-span-1 md:row-span-1 shadow-neumorphism rounded-2xl">
+    <div class="StanText  h-[50%] overflow-y-auto scrollbar-custom md:h-full w-full flex flex-col items-center p-3 gap-y-4 md:col-span-1 md:row-span-1 shadow-neumorphism rounded-2xl">
       <h1 class="text-3xl text-white">Standard Rooms!</h1>
       <p class="text-white"></p>
       <button class="h-16 w-28 bg-gradient-to-r from-green-500 to-green-700 rounded-md shadow-neumorphism hover:shadow-neumorphism-hover transition-shadow duration-300">
@@ -299,19 +335,134 @@
       </button>
       
     </div>
-    <div class="price h-[30%] md:h-full w-full flex flex-col items-center p-3 gap-y-4 md:col-span-1 md:row-span-1 shadow-neumorphism rounded-2xl">
+    <div class="price overflow-y-auto scrollbar-custom h-[30%] md:h-full w-full flex flex-col items-center p-3 gap-y-4 md:col-span-1 md:row-span-1 shadow-neumorphism rounded-2xl">
       <h1 class="text-3xl text-white">Price 💰!</h1>
       <p class="text-white">Price ranges from 1300 - 1500</p>
-      <p class="text-white">The range difference is based on wgara wgara</p>
+      <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias perferendis cum officiis incidunt corrupti.</p>
     </div>
   </div>
 </div>
+
+<div class="deluxe flex w-full h-fit items-center flex-col mt-4">
+  <div class="DeluxeCards h-fit md:h-[70vh] w-[90%] rounded-2xl bg-slate-700 p-4 overflow-y-auto shadow-neumorphism">
+    <div class="innercontent h-full w-full relative flex flex-col md:grid md:grid-cols-2 md:grid-rows-2 gap-4">
+      <div class="img h-[50%] md:h-full w-full rounded-2xl bg-green-700 md:col-span-1 md:row-span-2 shadow-neumorphism">
+        <img src="Images/stan1.jpeg" alt="" class="object-cover h-full w-full rounded-2xl">
+      </div>
+      <div class="DeluxeText  p scrollbar-custom  overflow-y-auto h-[50%] md:h-full w-full flex flex-col items-center p-3 gap-y-4 md:col-span-1 md:row-span-1 shadow-neumorphism rounded-2xl">
+        <h1 class="text-3xl text-white">Deluxe Rooms!</h1>
+        <p class="text-white"></p>
+        <button class="h-16 w-28 bg-gradient-to-r from-green-500 to-green-700 rounded-md shadow-neumorphism hover:shadow-neumorphism-hover transition-shadow duration-300">
+          <a href="#" class="font-semibold text-white">View more</a>
+        </button>
+      </div>
+      <div class="price overflow-y-auto scrollbar-custom h-[30%] md:h-full w-full flex flex-col items-center p-3 gap-y-4 md:col-span-1 md:row-span-1 shadow-neumorphism rounded-2xl">
+        <h1 class="text-3xl text-white">Price 💰!</h1>
+        <p class="text-white">Price ranges from 1300 - 1500</p>
+        <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias perferendis cum officiis incidunt corrupti.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="residential flex w-full h-fit items-center flex-col mt-4 scrollbar-custom">
+  <div class="ResidentialCards h-fit md:h-[70vh] w-[90%] rounded-2xl bg-slate-700 p-4 overflow-y-auto shadow-neumorphism scrollbar-custom">
+    <div class="innercontent h-full w-full relative flex flex-col md:grid md:grid-cols-2 md:grid-rows-2 gap-4">
+      <div class="img h-[50%] md:h-full w-full rounded-2xl bg-green-700 md:col-span-1 md:row-span-2 shadow-neumorphism">
+        <img src="Images/res1.jpeg" alt="" class="object-cover h-full w-full rounded-2xl">
+      </div>
+      <div class="ResidentialText p scrollbar-custom overflow-y-auto h-[50%] md:h-full w-full flex flex-col items-center p-3 gap-y-4 md:col-span-1 md:row-span-1 shadow-neumorphism rounded-2xl">
+        <h1 class="text-3xl text-white">Residential Suite!</h1>
+        <p class="text-white"></p>
+        <button class="h-16 w-28 bg-gradient-to-r from-green-500 to-green-700 rounded-md shadow-neumorphism hover:shadow-neumorphism-hover transition-shadow duration-300">
+          <a href="#" class="font-semibold text-white">View more</a>
+        </button>
+      </div>
+      <div class="price overflow-y-auto scrollbar-custom h-[30%] md:h-full w-full flex flex-col items-center p-3 gap-y-4 md:col-span-1 md:row-span-1 shadow-neumorphism rounded-2xl">
+        <h1 class="text-3xl text-white">Price 💰!</h1>
+        <p class="text-white">Price ranges from 2000 - 2500</p>
+        <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias perferendis cum officiis incidunt corrupti.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
       </div>
     </div>
 
 
 
   </section>
+
+  <section class="book relative top-10 flex flex-col items-center w-full h-fit">
+    <div class="main w-[90%] bg-[#2f3948] h-full p-10 rounded-2xl shadow-neumorphism">
+      <h1 class="book-head text-[10vw] font-sans text-white"><span class="text-[#eab308] font-bold">Lorem</span> ipsum,</h1>
+      <h1 class="book-subhead text-[6vw] md:text-[3vw] text-gray-200">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, omnis?</h1>
+      <a href="#" class="bookNow relative bg-[#506b27] h-[40px] w-[70px] p-[1.5vh] hover:underline min-w-fit text-nowrap hover:shadow-neumorphism-hover top-5 transition-transform transform hover:scale-105">Book now</a>
+    </div>
+  </section>
+   
+  
+
+
+  <footer class="h-fit w-full flex justify-center">
+    <div class="f-main h-fit w-[90%] bg-[#2f3948] relative top-20 flex gap-20 px-24 rounded-2xl py-5 flex-wrap lg:flex-nowrap justify-center">
+      <div class="f-logo w-fit h-full">
+        <img src="Images/logo.jpg" alt="Mannat Home Logo" class="w-20 lg:min-w-24 relative top-[50px]">
+      </div>
+      <div
+    class="footerDiv font-[400] flex flex-col gap-y-2 lg:items-start items-center h-fit w-fit  ">
+    <a href="#" class="footer-elements [w-100px]">
+      <span class="relative inline-block font-[300] text-gray-500">Gallery</span>
+    </a>
+    <a href="#" class="footer-elements [w-100px]">
+      <span class="relative inline-block font-[300] text-gray-500">Places to visit</span>
+    </a>
+    <a href="#" class="footer-elements w-[100px]">
+      <span class="relative inline-block font-[300] text-gray-500">Things to do</span>
+    </a>
+    <a href="#" class="footer-elements w-[100px]">
+      <span class="relative inline-block font-[300] text-gray-500">Services</span>
+    </a>
+    <a href="#" class="footer-elements w-[100px]">
+      <span class="relative inline-block font-[300] text-gray-500">Write a review</span>
+    </a>
+  </div>
+   
+      <div class="f-social">
+        <h1 class="text-[24px]">Follow us on!</h1>
+        <div class="icons flex gap-4">   
+          <a href="#"><img src="svg/insta.svg" alt="" class="h-8"></a>
+          <a href="#"><img src="svg/youtube.svg" alt="" class="h-8"></a></div>
+     
+      </div>
+      <div class="f-contact w-[200px]">
+        <h1 class="text-[24px]">Contact us on!</h1>
+        <div><span><img src="svg/call.svg" alt="" class="h-4 invert inline-block">+91 9816048116</span></div>
+        <div><span><img src="svg/call.svg" alt="" class="h-4 invert inline-block">+91 9816248116</span></div>
+        <div class="w-[230px]"><span><img src="svg/email.svg" alt="" class="h-4 invert inline-block">bhallaraju16@gmail.com</span></div>
+      </div>
+      <div class="f-rev">
+       
+          <h1 class="text-[24px]">Review us on!</h1>
+            
+          <a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=201707120706533551&amp;_uCurrency=INR&amp;checkin=12282022&amp;checkout=12292022&amp;city=CTKUU&amp;country=IN&amp;lat=32.11165&amp;lng=77.1647&amp;locusId=CTKUU&amp;locusType=city&amp;mmAreaTag=Naggar%7CARNAGGA&amp;rank=11&amp;regionNearByExp=3&amp;roomStayQualifier=2e0e&amp;searchText=Naggar%2C%20Manali&amp;mtkeys=defaultMtkey" target="_blank " class="hover:underline">Makemytrip</a>
+          <br>
+          <a href="https://www.goibibo.com/hotels/new-mannat-home-hotel-in-manali-4860833998681590974/?hquery={%22ci%22:%2220230103%22,%22co%22:%2220230104%22,%22r%22:%221-2-0%22,%22ibp%22:%22v15%22}&amp;hmd=134c40bb52581fa9849839ed423d27e3381121ba6b0e7ee8d49219e551ca4aad7e07addea0ef6b53524519d1e69e5c33a1ea6d6bb4761356824c0743129b175ec657d557d0d5e0e4b170d87dda989a19cf8ceddbf0808725e7553f351f4a3d98574adbecc1bb8844e7e429ae84a81f9bb98b58a09fa0fc760e213188a14272a06ba659601924accddb61edeeb8f2475a9422f98a33466609659e200b7973a3a84c1020f1f235a1b24abd4b1c31e0e3eb72af075b55cd388bb38cd6634b817383e630dac07c097dc64107f95e84299526e03fa5c01382ac73f7d2268f2b58fd98aba037d1e27a588983b4a9ccef7e4eb02d68356735172a2fb737f8d850024622ee8d53e887035bf76494209365ed51c7f7fe8b241fc177633c28f1f3fee67eb367ada2395528484dbbf02aa3fa67473b7520b30bd32b4aca3a24660335737e9eb5e0f6d173349d40a45091d1c64d05ae1c5ca9de706b883f1caf1156da67b3c0bc48dfe985727fabf475b3fd53889e49702899bd76e23509e3c63b&amp;cc=IN&amp;reviewType=gi&amp;vcid=2242315224277940906&amp;srpFilters={%22location_search%22:[{%22loc_id%22:%228372839127671960380%22,%22n%22:%22Naggar,%20Manali%22,%22id_type%22:%22voy%22,%22auto%22:%22true%22}]}" target="_blank" class="hover:underline">Goibibo</a>
+          <br>
+          <a href="https://www.airbnb.co.in/rooms/47230232?locale=en&amp;_set_bev_on_new_domain=1672152663_ZWZmYzY3NmNkODRh&amp;source_impression_id=p3_1672152666_MI6HoHdE4p2WI23H" target="_blank" class="hover:underline">Airbnb</a>
+          <br>
+          <br>
+          <br>
+          version:1.4.0
+          
+      </div>
+
+    </div>
+
+  </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
     integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
@@ -325,3 +476,5 @@
 </body>
 
 </html>
+
+
