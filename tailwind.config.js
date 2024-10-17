@@ -12,8 +12,17 @@ module.exports = {
         neumorphism: '10px 10px 20px #1a1a1a, -10px -10px 20px #2e2e2e',
         'neumorphism-hover': '5px 5px 10px #1a1a1a, -5px -5px 10px #2e2e2e',
       },
+      colors: {
+        'scrollbar-bg': '#1a1a1a', // Background color for scrollbar
+        'scrollbar-thumb': '#2e2e2e', // Thumb color for scrollbar
+        'scrollbar-thumb-hover': '#3e3e3e', // Hover color for scrollbar thumb
+      },
     },
   },
-  variants: {},
-  plugins: [],
+  variants: {
+    scrollbar: ['rounded']
+  },
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 }
